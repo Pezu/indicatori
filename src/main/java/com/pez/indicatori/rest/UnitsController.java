@@ -45,7 +45,7 @@ public class UnitsController {
 	}
 
 	@RequestMapping(value = "/delete",
-			method = {RequestMethod.PUT},
+			method = {RequestMethod.DELETE},
 			produces = {MediaType.APPLICATION_JSON_VALUE})
 	public void delete(@RequestBody Unit toDelete){
 		unitsRepository.delete(toDelete);
