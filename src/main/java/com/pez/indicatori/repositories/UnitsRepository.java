@@ -13,4 +13,6 @@ import com.pez.indicatori.entities.Unit;
 public interface UnitsRepository  extends JpaRepository<Unit, Long>{
 
     List<Unit> findAll();
+    
+    Unit findById(Integer id);
 }
